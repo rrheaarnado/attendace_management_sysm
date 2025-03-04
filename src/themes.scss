@@ -1,0 +1,22 @@
+// themes.scss
+
+@use '@nebular/theme/styles/theming' as *;
+@use '@nebular/theme/styles/themes/default' as *;
+@use '@nebular/theme/styles/themes/dark' as *;
+@use '@nebular/theme/styles/themes/corporate' as *;
+
+// Light Theme
+$nb-themes: nb-register-theme((color-primary-100: #3366FF, // Primary Color
+            color-secondary-100: #00D68F, // Secondary Color
+            background-basic-color-1: #F7F9FC, // Background
+            text-basic-color: #222B45, // Text Color
+            button-primary-background-color: #FFAA00, // Button Color
+        ), light, corporate);
+
+// Dark Theme
+$nb-themes: nb-register-theme((color-primary-100: #1A1F36, // Primary Color
+            color-secondary-100: #00A676, // Secondary Color
+            background-basic-color-1: #121212, // Background
+            text-basic-color: #E4E9F2, // Text Color
+            button-primary-background-color: #FFD166, // Button Color
+        ), dark, corporate);

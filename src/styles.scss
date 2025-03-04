@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@nebular/theme/styles/theming' as *;
+@use '@nebular/theme/styles/themes/default' as *;
+@use '@nebular/theme/styles/themes/dark' as *;
+@use '@nebular/theme/styles/globals' as *; // Important import for mixins
+
+@import './themes.scss'; // Ensure the correct path to your custom theme file
+
+@include nb-install() {
+    @include nb-theme-global();
+}
